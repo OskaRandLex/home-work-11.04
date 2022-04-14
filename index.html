@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-block">
+            <div class="logo">
+                <a href="#" class="logo-items">
+                    <img src="img/ticks.png" alt="STAR" class="tricks">
+                    <img src="img/bar.png" alt="" class="bar">
+                    <img src="img/powered.png" alt="" class="big-logo">
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li>
+                        <a href="" class="nav">ARTICLES</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">VIDEOS</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">ALMANAC</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">NEWSLETTER</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">GUIDES</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">DIGITALOCEAN</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav">DO COMMUNITY</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="search-btn">
+                <a href="#">
+                    <img src="img/search-btn.png" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-wrap">
+        <div class="info">
+            <div class="left-info">
+                <div class="navigation">
+                    <span>
+                        <a href="#">Home</a>
+                        <span class="slash">/</span>
+                    </span>
+                    <span>
+                        <a href="#">Guides</a>
+                        <span class="slash">/</span>
+                    </span>
+                </div>
+                <h1>A Complete Guide to Flexbox</h1>
+                <div class="man-info">
+                    <a href="#">
+                        <img src="img/author.jpeg" alt="">
+                    </a>
+                    <div class="author-info">
+                        <p><a href="#">Chris Coyier</a> on Apr 8, 2013 (Updated on Feb 20, 2022)</p>
+                    </div>
+                </div>
+                <h2>Our comprehensive guide to CSS flexbox layout. This complete <br> guide explains everything about flexbox, focusing on all <br> the different possible properties for the parent element (the flex <br> container) and the child elements (the flex items). It also includes <br> history, demos, patterns, and a browser support chart.</h2>
+            </div>
+
+            <div class="right-info">
+                <div class="sponsor-info">
+                    <div class="text-sponsor">
+                        <h5>CSS-Tricks + <br> DigitalOcean</h5>
+                        <p>CSS-Tricks is joining the DigitalOcean community! We are so excited to be joining forces. Learn more about this change <a href="#">here</a>. As a special welcome offer, <a href="#">enjoy $100 of free credit</a> to try DigitalOcean on us.</p>
+                    </div>
+                    <div class="img-sponsor">
+                        <a href="#">
+                            <img src="img/sponsor-img.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container">
+                <div class="menu-content">
+                    <div class="menu-menu">
+                        <ol class="article-series">
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Basics and terminology</a></li>
+                            <li><a href="#">Flexbox properties</a></li>
+                            <li><a href="#">Prefixing Flexbox</a></li>
+                            <li><a href="#">Examples</a></li>
+                            <li><a href="#">Flexbox tricks</a></li>
+                            <li><a href="#">Browser support</a></li>
+                            <li><a href="#">Bugs</a></li>
+                            <li><a href="#">Related properties</a></li>
+                            <li><a href="#">More information</a></li>
+                        </ol>
+                    </div>
+                    <div class="poster">
+                        <div class="info-poster">
+                            <h4>Get the poster!</h4>
+                            <p>Reference this guide a lot? Here’s a high-res image you can print!
+                            </p>
+                            <div class="btn">
+                                <a href="#">DOWNLOAD FOR FREE</a>
+                            </div>
+                        </div>
+                        <img src="img/poster.webp" alt="">
+                    </div>
+                </div>
+                <hr class="line">
+
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-1" class="hide">
+                    <label for="hd-1"><h1>Background</h1></label>
+                    
+                    <div class="label-text" id="label-1">
+                        <p>The Flexbox Layout (Flexible Box) module ( <a href="#">a W3C Candidate Recommendation</a> as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p> <span>Note:</span> Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the <a href="#">Grid</a> layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-2" class="hide">
+                    <label for="hd-2"><h1>Basics and terminology</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-3" class="hide">
+                    <label for="hd-3"><h1>Flexbox properties</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-4" class="hide">
+                    <label for="hd-4"><h1>Prefixing Flexbox</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-5" class="hide">
+                    <label for="hd-5"><h1>Examples</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-6" class="hide">
+                    <label for="hd-6"><h1>Flexbox Tricks</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-7" class="hide">
+                    <label for="hd-7"><h1>Browser support</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-8" class="hide">
+                    <label for="hd-8"><h1>Bugs</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-9" class="hide">
+                    <label for="hd-9"><h1>Related properties</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <div class="demo">
+                    
+                    <input type="checkbox" id="hd-10" class="hide">
+                    <label for="hd-10"><h1>More information</h1></label>
+                    
+                    <div class="label-text">
+                        <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                        <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                        <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                        <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+
+            </div>
+            
+        </div>
+        <div class="free-credit">
+            DigitalOcean joining forces with CSS-Tricks! Special welcome offer: 
+            <a href="#">get $100 of free credit</a>.
+        </div>
+        <div class="respond-area">
+            <h2 class="comments-title"><span>Comments</span></h2>
+            <div class="demo">
+                    
+                <input type="checkbox" id="hd-11" class="hide">
+                <label for="hd-11"><h3>Toggle All Comments (there are a lot)</h3></label>
+                
+                <div class="label-text">
+                    <p>The Flexbox Layout (Flexible Box) module (a W3C Candidate Recommendation as of October 2017) aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+                    <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+                    <p>Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).</p>
+                    <p>Note: Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the Grid layout is intended for larger scale layouts.</p>
+                </div>
+            </div>
+            <div class="respond">
+
+                <div class="comment-respond-form">
+
+                    <div class="comment-respond">
+
+                        <h3>Leave a Reply</h3>
+                        <form action="#" class="comment-form">
+                            <p class="comment-form-comment">
+                                <label for="comment">
+                                    Comment
+                                </label>
+                                <textarea name="comment" id="comment" cols="45" rows="8" placeholder="New Comment! Use `backticks` for code."></textarea>
+                            </p>
+                            <p class="comment-form-author">
+                                <label for="author">Name</label>
+                                <input type="text" id="author" name="author">
+                            </p>
+                            <p class="comment-form-email">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email">
+                            </p>
+                            <p class="comment-form-url">
+                                <label for="url">Website</label>
+                                <input type="text" name="url" id="url">
+                            </p>
+                            <p class="comment-form-cookies-consent">
+                                <input type="checkbox" name="wp-comment-cookies-consent" id="wp-comment-cookies-consent">
+                                <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label>
+                            </p>
+                            <p class="get-the-css">
+                                <label>
+                                    <input type="checkbox" name="get-the-css-tricks">
+                                    <span>Get the CSS-Tricks newsletter</span>
+                                </label>
+                            </p>
+                            <p class="form-submit">
+                                <input type="submit" class="submit" name="submit" value="Post Comment">
+                            </p>
+
+                        </form>
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <footer class="site-footer">
+        <img src="img/svg-footer-img.png" alt="">
+        <div class="footer-inside">
+
+            <div class="subscribe-form">
+                <p class="footer-first-text">CSS-Tricks is powered by <a href="#">DigitalOcean</a>.</p>
+                <div class="footer-form-wrap">
+                    <h4>KEEP UP TO DATE ON WEB DEV</h4>
+                    <p>with our hand-crafted newsletter</p>
+                    <span>
+                        <form class="footer-form">
+                            <input type="email" name="email-footer" id="email-footer">
+                            <button type="submit" class="footer-btn">Subscribe</button>
+                        </form>
+                    </span>
+                </div>
+            </div>
+            
+            <div class="link-footer">
+                <div class="link-div">
+                    <div class="link-h-div">
+                        <h5>DIGITALOCEAN</h5>
+                        <ul>
+                            <li><a href="#">DigitalOcean</a></li>
+                            <li><a href="#">DigitalOcean Community</a></li>
+                            <li><a href="#">About DigitalOcean</a></li>
+                            <li><a href="#">Legal</a></li>
+                            <li><a href="#">Free Credit Offer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="link-div">
+                    <div class="link-h-div">
+                        <h5>MINISITES</h5>
+                        <ul>
+                            <li><a href="#">The Power of Serverless</a></li>
+                            <li><a href="#">Upcoming Conferences</a></li>
+                            <li><a href="#">Coding Fonts</a></li>
+                            <li><a href="#">The Greatest CSS Tricks</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="link-div">
+                    <div class="link-h-div">
+                        <h5>CONTACT</h5>
+                        <ul>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Guest Writing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="link-div">
+                    <div class="link-h-div-flex">
+                        <h5>FOLLOW</h5>
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">YouTube</a></li>
+                            <li><a href="#">CodePen</a></li>
+                            <li><a href="#">iTunes</a></li>
+                            <li><a href="#">RSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
